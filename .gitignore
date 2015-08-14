@@ -15,4 +15,10 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore other unneeded files.
 /vendor/bundle
+/Gemfile.lock
+/Gemfile.local
+.project
+.secret
