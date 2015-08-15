@@ -10,6 +10,9 @@ group :development, :test do
 
   # Use RSpec for integration test
   gem 'rspec-rails'
+
+  gem 'guard'
+  gem 'guard-rspec'
 end
 
 group :test do
