@@ -6,6 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
+/vendor/bundle
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -17,8 +18,4 @@
 /tmp
 
 # Ignore other unneeded files.
-/vendor/bundle
-/Gemfile.lock
-/Gemfile.local
 .project
-.secret
