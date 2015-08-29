@@ -54,6 +54,9 @@ group :development, :test do
   # Use Spork
   gem 'spork-rails'
   gem 'guard-spork'
+
+  # コードチェック
+  gem 'rubocop'
 end
 
 group :test do
