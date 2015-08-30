@@ -6,7 +6,7 @@ Spork.prefork do
   ENV['RAILS_ENV'] ||= 'test'
   require File.expand_path('../../config/environment', __FILE__)
   # Prevent database truncation if the environment is production
-  abort("The Rails environment is running in production mode!") if Rails.env.production?
+  abort('The Rails environment is running in production mode!') if Rails.env.production?
   require 'spec_helper'
   require 'rspec/rails'
   # Add additional requires below this line. Rails is not loaded until this point!
@@ -59,18 +59,16 @@ Spork.prefork do
     # https://relishapp.com/rspec/rspec-rails/docs
     config.infer_spec_type_from_file_location!
 
-    config.order = "random"
+    config.order = 'random'
     config.include Capybara::DSL
   end
 end
 
 Spork.each_run do
   # This code will be run each time you run your specs.
-
 end
 
-#uncomment the following line to use spork with the debugger
-
+# uncomment the following line to use spork with the debugger
 
 # --- Instructions ---
 # Sort the contents of this file into a Spork.prefork and a Spork.each_run
@@ -100,7 +98,3 @@ end
 #
 # These instructions should self-destruct in 10 seconds.  If they don't, feel
 # free to delete them.
-
-
-
-
