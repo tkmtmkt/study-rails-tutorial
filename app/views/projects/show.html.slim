@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Code:
+  = @project.code
+p
+  strong Name:
+  = @project.name
+
+.btn-group.btn-lg
+  = link_to 'Edit', edit_project_path(@project), class: 'btn btn-default'
+  = link_to 'Back', projects_path, class: 'btn btn-default'

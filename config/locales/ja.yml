@@ -21,3 +21,9 @@
 
 ja:
   hello: "はろーわーるど"
+
+  activerecord:
+    attributes:
+      project:
+        code: "code"
+        name: "name"
