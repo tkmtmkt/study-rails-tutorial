@@ -10,6 +10,7 @@ nav.navbar.navbar-fixed-top.navbar-inverse
     #navbar.navbar-collapse.collapse
       ul.nav.navbar-nav
         li = link_to 'Home', root_path, class: 'active'
+        li = link_to 'projects', projects_path
         li = link_to 'Help', help_path
         li.dropdown
           a.dropdown-toggle href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
@@ -25,6 +26,4 @@ nav.navbar.navbar-fixed-top.navbar-inverse
             li
               a href="#" One more separated link
       ul.nav.navbar-nav.navbar-right
-        li = link_to 'Home',    root_path
-        li = link_to 'Help',    help_path
         li = link_to 'Sign in', signup_path
