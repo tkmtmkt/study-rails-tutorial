@@ -6,7 +6,8 @@ nav.navbar.navbar-fixed-top.navbar-inverse
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      = link_to 'sample app', root_path, id: 'logo', class: 'navbar-brand'
+      = link_to root_path, id: 'logo', class: 'navbar-brand' do
+        i.fa.fa-home.fa-lg
     #navbar.navbar-collapse.collapse
       ul.nav.navbar-nav
         li = link_to 'Home', root_path, class: 'active'
