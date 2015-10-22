@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.4'
 # Use slim for .slim views
-gem 'slim-rails', '~> 3.0'
+gem 'slim-rails', '~> 3.0.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0.0'
 # Use bootstrap
 gem 'bootstrap-sass', '~> 3.3.5'
 # Use Fontawesome
@@ -58,6 +58,12 @@ group :development, :test do
 
   # コードチェック
   gem 'rubocop'
+
+  # コンソール拡張
+  gem 'pry-rails'  # rails console(もしくは、rails c)でirbの代わりにpryを使われる
+  gem 'pry-doc'    # methodを表示
+  gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
+  gem 'pry-stack_explorer' # スタックをたどれる
 end
 
 group :test do
